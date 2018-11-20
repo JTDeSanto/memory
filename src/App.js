@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
+
+
+  cardData = () => {
+      axios.get('cardData.json')
+      .then((res) => console.log("i got data"))
+      .catch((err) => console.log(err.response.data));
+    }
+
+    
+
+
   render() {
+
+    
     return (
       <div className="App">
         <header className="App-header">

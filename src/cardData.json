@@ -1,0 +1,219 @@
+{
+  "card1":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"C"
+          }
+        },
+  "card2":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"C#"
+          }
+        },
+  "card3":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"D"
+          }
+        },
+  "card4":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"Eb"
+          }
+        },
+  "card5":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"E"
+          }
+        },
+  "card6":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"F"
+          }
+        },
+  "card7":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"F#"
+          },
+        },
+  "card8":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"G"
+          }
+        },
+  "card9":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"G#"
+          }
+        },
+  "card10":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"A"
+          }
+        },
+  "card11":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"Bb"
+          }
+        },
+  "card12":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"B"
+          }
+        },
+ "card13":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"C"
+          }
+        },
+  "card14":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"C#"
+          }
+        },
+  "card15":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"D"
+          }
+        },
+  "card16":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"Eb"
+          }
+        },
+  "card17":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"E"
+          }
+        },
+  "card18":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"F"          }
+        },
+  "card19":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"F#"
+          }
+        },
+  "card20":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"G"
+          }
+        },
+  "card21":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"G#"
+          }
+        },
+  "card22":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"A"
+          }
+        },
+  "card23":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"Bb"
+          }
+        },
+  "card24":{
+          "front": {
+            "image":"./images/"
+          },
+          "back": {
+            "image":"./images/",
+            "note":"B"
+          }
+        }                                                
+}
+
+// export default cards;
