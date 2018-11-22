@@ -1,219 +1,217 @@
-const cards = {
-  "card1":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"C"
-          }
-        },
-  "card2":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"C#"
-          }
-        },
-  "card3":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"D"
-          }
-        },
-  "card4":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"Eb"
-          }
-        },
-  "card5":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"E"
-          }
-        },
-  "card6":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"F"
-          }
-        },
-  "card7":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"F#"
-          },
-        },
-  "card8":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"G"
-          }
-        },
-  "card9":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"G#"
-          }
-        },
-  "card10":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"A"
-          }
-        },
-  "card11":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"Bb"
-          }
-        },
-  "card12":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"B"
-          }
-        },
- "card13":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"C"
-          }
-        },
-  "card14":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"C#"
-          }
-        },
-  "card15":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"D"
-          }
-        },
-  "card16":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"Eb"
-          }
-        },
-  "card17":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"E"
-          }
-        },
-  "card18":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"F"          }
-        },
-  "card19":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"F#"
-          }
-        },
-  "card20":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"G"
-          }
-        },
-  "card21":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"G#"
-          }
-        },
-  "card22":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"A"
-          }
-        },
-  "card23":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"Bb"
-          }
-        },
-  "card24":{
-          "front": {
-            "image":"./images/"
-          },
-          "back": {
-            "image":"./images/",
-            "note":"B"
-          }
-        }                                                
-};
-
-export default cards;
+[{
+ "card1": { "id": 1,
+    "front": {
+      "image":"./images/note-c5.png"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"C"
+    }
+  },
+  "card2": { "id": 2,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"C#"
+    }
+  },
+  "card3": { "id": 3,
+    "front": {
+      "image":"./images/note-d5.png"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"D"
+    }
+  },
+  "card": { "id": 4,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"Eb"
+    }
+  },
+  "card2": { "id": 5,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-e5.png",
+      "note":"E"
+    }
+  },
+  "card2": { "id": 6,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-f5.png",
+      "note":"F"
+    }
+  },
+  "card2": { "id": 7,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"F#"
+    },
+  },
+  "card2": { "id": 8,
+    "front": {
+      "image":"./images/note-g4.png"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"G"
+    }
+  },
+  "card2": { "id": 9,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"G#"
+    }
+  },
+  "card2": { "id": 10,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-a4.png",
+      "note":"A"
+    }
+  },
+  "card2": { "id": 11,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"Bb"
+    }
+  },
+  "card2": { "id": 12,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-b4.png",
+      "note":"B"
+    }
+  },
+  "card2": { "id": 13,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-c5.png",
+      "note":"C"
+    }
+  },
+  "card14": { "id": 14,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"C#"
+    }
+  },
+  "card15": { "id": 15,
+    "front": {
+      "image":"./images/note-d5.png"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"D"
+    }
+  },
+  "card16": { "id": 16,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"Eb"
+    }
+  },
+  "card17": { "id": 17,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/note-e4.png",
+      "note":"E"
+    }
+  },
+  "card18": { "id": 18,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"F"          }
+  },
+  "card19": { "id": 19,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"F#"
+    }
+  },
+  "card20": { "id": 20,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"G"
+    }
+  },
+  "card21": { "id": 21,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"G#"
+    }
+  },
+  "card22": { "id": 22,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"A"
+    }
+  },
+  "card23": { "id": 23,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"Bb"
+    }
+  },
+  "card24": { "id": 24,
+    "front": {
+      "image":"./images/"
+    },
+    "back": {
+      "image":"./images/",
+      "note":"B"
+    }
+  
+}]
