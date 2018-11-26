@@ -23,7 +23,7 @@ class Cards extends React.Component {
 
     return (
       <div className="card-container">
-       
+        {cards}
       </div>
     ); 
   }
