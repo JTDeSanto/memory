@@ -5,10 +5,11 @@ class Cards extends React.Component {
 
   componentWillMount() {
     this.props.getCardData();
+    
   }
 
   render(){
-    const { memoryCards } = this.props;
+    const { memoryCards, action} = this.props;
 
       const cards = memoryCards.map((card, index) => {
       return (
@@ -16,6 +17,9 @@ class Cards extends React.Component {
           key={index}
           index={index}
           card={card}
+          action={action}
+          
+
         />
           
       );        

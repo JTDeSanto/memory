@@ -12,19 +12,25 @@ class Card extends React.Component {
     };
   }
 
- 
+ updateFlipCount = () => { 
+  console.log("I want to add a flipped card")
+  this.props.action();
+  };
 
   flipCard = () => {
     this.setState({ flipped: !this.state.flipped });
+    this.updateFlipCount();
 
   }
+
+  
 
   cardClass = () => this.state.flipped ? 'Card -back' : 'Card -front'
   
   
 
   render() {
-     
+   
     return (
         <div className={this.cardClass()} onClick={ () => this.flipCard() } >
           {!this.state.flipped ?

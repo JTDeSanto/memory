@@ -8,12 +8,25 @@ class App extends Component {
 
   constructor(){
     super();
-    this.state = {
-      memoryCards: []
 
+    this.handleFlips = this.handleFlips.bind(this);
+    this.state = {
+      memoryCards: [],
+      cardsFlipped: 0
     }
   }
 
+ 
+
+  addFlippedCard = () => {
+    this.setState( (state) => {
+      return {cardsFlipped: state.cardsFlipped + 1}
+    });
+  }
+
+  handleFlips()  {
+    this.addFlippedCard();
+  }
 
   getCardData = () => {
       axios.get('cardData.json')
@@ -22,15 +35,23 @@ class App extends Component {
     }
 
   render() {
-    const { memoryCards } = this.state;
+    const { memoryCards, cardsFlipped } = this.state;
     
     return (
       <div className="App">
       
-      <Cards getCardData={this.getCardData} memoryCards={memoryCards} />
-      
+      <Cards 
+        getCardData={this.getCardData} 
+        memoryCards={memoryCards} 
+        cardsFlipped={cardsFlipped} 
+        action={this.addFlippedCard}
+
+         />
+        
+        <button >Add a card</button>
       
       </div>
+
     );
   }
 }
