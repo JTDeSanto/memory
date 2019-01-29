@@ -4,29 +4,68 @@ import axios from 'axios';
 import Cards from './components/Cards';
 
 
+
 class App extends Component {
 
   constructor(){
     super();
-
-    this.handleFlips = this.handleFlips.bind(this);
     this.state = {
       memoryCards: [],
-      cardsFlipped: 0
+      compareCards: [],
+      matchedCards: { matched: null, card0: 0 , card1: 0}
     }
+    // this.doCardsMatch = this.doCardsMatch.bind(this)
+    // this.updateCardsMatchState = this.updateCardsMatchState.bind(this)
+    
+    
   }
 
- 
 
-  addFlippedCard = () => {
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.compareCards.length === 1) {
+      this.doCardsMatch(this.state.compareCards) 
+    }
+}
+  
+
+
+ doCardsMatch = (array) => {
+  const card0 = array[0]
+  const card1 = array[1]
+  if (card0.note === card1.note){
+    console.log("Hooray, you matched!")
+    this.updateCardsMatchState(card0.index, card1.index, true);
+    
+  
+  }
+  else {
+    console.log("Sorry, try again!")
+        this.updateCardsMatchState(card0.index, card1.index, false);
+  }
+  this.clearCompareCards();
+  
+ };
+
+  updateCardsMatchState = (index0, index1, matchState) => {
+      this.setState( (state) => {
+        return {matchedCards: {matched: matchState, card0: index0, card1: index1}}
+      });    
+  }
+   
+ getCardsToCompare = (note) => {    
     this.setState( (state) => {
-      return {cardsFlipped: state.cardsFlipped + 1}
+      return { compareCards: [...this.state.compareCards, note] }
     });
-  }
 
-  handleFlips()  {
-    this.addFlippedCard();
-  }
+ }
+
+ clearCompareCards = () => {
+  this.setState( (state) => {
+    return { compareCards: []}
+  })
+ }
+
 
   getCardData = () => {
       axios.get('cardData.json')
@@ -34,21 +73,25 @@ class App extends Component {
       .catch((err) => console.log(err.response));
     }
 
+
   render() {
-    const { memoryCards, cardsFlipped } = this.state;
+    const { memoryCards, compareCards, matchedCards } = this.state;
     
     return (
       <div className="App">
       
       <Cards 
         getCardData={this.getCardData} 
-        memoryCards={memoryCards} 
-        cardsFlipped={cardsFlipped} 
-        action={this.addFlippedCard}
+        memoryCards={memoryCards}
+        compareCards={compareCards}
+        getCardsToCompare={this.getCardsToCompare}
+        doCardsMatch={this.doCardsMatch}
+        matchedCards={matchedCards}
+        updateCardsMatchState={this.updateCardsMatchState}
 
          />
         
-        <button >Add a card</button>
+        
       
       </div>
 
